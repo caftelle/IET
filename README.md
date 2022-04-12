@@ -10,7 +10,8 @@ If you scan the QR Code other than TEAS|M99999|H99999|I99999 or TEAS|M99999|H999
 Please don't forget to share your feedback with us.
 Finally, it is forbidden to make unauthorized changes to the codes of this software, make a copy of it and put it up for sale by changing the name, or use it for commercial purposes.
 
-| D e v e l o p e d by C a f t e l l e | Caftelle created by Furkan ARINCI 
+| D e v e l o p e d by C a f t e l l e 
+| Caftelle created by Furkan ARINCI 
 | Copyright 2022
 
 Explain for The IETApp
@@ -18,8 +19,19 @@ Explain for The IETApp
 ##########################################################
 
 Hello users and my fellow software developers, Reading the Job Tracking Form is a routine work we do at the workplace every day, getting the necessary information and saving this information in the appropriate place in the Excel Workspace. Then, to date, these recorded files and send us an e-mail to the required person. We only ask the user to show the QR Code and Required Information on the Job Tracking Form to the camera. In this way, users have these magic codes to do the long processes I mentioned above. If you follow the instructions that appear on the screen correctly while using the program, the program can't fail. You can use it with peace of mind.
+
 | D e v e l o p e d by C a f t e l l e 
 | Caftelle created by Furkan ARINCI 
 | Copyright 2022
+
+Updates
+
+##########################################################
+
+Version 1.0.2 Update
+
+Update Details
+Erase update of scanned data outputs after all operations so that the data is not mixed.
+Tue 12 Apr 09:25 P.M
 
 ##########################################################
