@@ -29,6 +29,10 @@ Update Details
 Erase update of scanned data outputs after all operations so that the data is not mixed.
 Tue 12 Apr 09:25 P.M
 
+Version 1.0.3 Update
+
+Add sound effects update. Wed 3 Apr 08:50 A.M.
+
 ##########################################################
 
 | D e v e l o p e d by C a f t e l l e  
