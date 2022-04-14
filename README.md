@@ -1,4 +1,4 @@
-# I E T A P P
+# I E T 
 
 How to use?
 
