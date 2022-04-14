@@ -24,14 +24,14 @@ Updates
 ##########################################################
 
 Version 1.0.2 Update
-
-Update Details
 Erase update of scanned data outputs after all operations so that the data is not mixed.
 Tue 12 Apr 09:25 P.M
 
 Version 1.0.3 Update
-
 Add sound effects update. Wed 3 Apr 08:50 A.M.
+
+Version Update 1.0.4 Update
+Performance Updates Thu 14 Apr 05.06 P.M.
 
 ##########################################################
 
