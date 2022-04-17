@@ -193,7 +193,7 @@ def AllWithLove():
     # Excel Satır Döngüsü
     iptalline = 2
     tesisline = 2
-    tarananadet = 0
+
 
     # Excel Dosyası Oluşturma
     planWorkbook1 = xlsxwriter.Workbook('Taranan_Is_Emirleri.xlsx')
@@ -229,6 +229,7 @@ def AllWithLove():
         cap1 = cv.VideoCapture(0)
         cap1.set(3, 1920)
         cap1.set(4, 1080)
+        cap1.set(15, 0.1)
 
         # Değerlerin Sıfırlanması
         textstart = False
@@ -312,9 +313,8 @@ def AllWithLove():
                             isemriturufinal = isemriturufinal
                             isemriturufinal = isemriturufinal.upper()
                             isemriturufinal = isemriturufinal.strip()
-                            text = isemriturufinal
+                            text2 = isemriturufinal
                 except:
-
                     pass
 
                 # İŞ EMRİ NO AYIKLAMA QR
@@ -573,8 +573,8 @@ def AllWithLove():
                              ('Ç', 'C'),
                              ('ş', 's'), ('Ş', 'S'), ('ğ', 'g'), ('Ğ', 'G')]
             for search, replace in replace_chars:
-                text = text.replace(search, replace)
-                text2 = text
+                text2 = text2.replace(search, replace)
+                text2 = text2
                 text2 = text2.upper()
                 text2 = text2.strip()
                 break
