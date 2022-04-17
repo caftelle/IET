@@ -28,7 +28,7 @@ Erase update of scanned data outputs after all operations so that the data is no
 Tue 12 Apr 09:25 P.M
 
 Version 1.0.3 
-Add sound effects update. Wed 3 Apr 08:50 A.M.
+Add sound effects update. Wed 13 Apr 08:50 A.M.
 
 Version 1.0.4 
 Performance Updates Thu 14 Apr 05.06 P.M.
