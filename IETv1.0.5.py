@@ -229,7 +229,6 @@ def AllWithLove():
         cap1 = cv.VideoCapture(0)
         cap1.set(3, 1920)
         cap1.set(4, 1080)
-        cap1.set(15, 0.1)
 
         # Değerlerin Sıfırlanması
         textstart = False
