@@ -1223,9 +1223,8 @@ def AllWithLove():
                 planSheetiptal[Fi] = tarihcikti
 
                 iptalline = iptalline + 1
-                tarananadet = tarananadet + 1
                 savestart = False
-                print(' |  B A Ş A R I Y L A   A K T A R I L D I . ' + 'Taranan Evrak Sayısı: '+ tarananadet)
+                print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
                 beep.beep(5)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
