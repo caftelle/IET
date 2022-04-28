@@ -36,6 +36,9 @@ Performance Updates Thu 14 Apr 05.06 P.M.
 Version 1.0.5 
 Text Reading Performance Update Sun 17 Apr 11.20 A.M.
 
+Version 1.0.6 
+Update New Sounds Thu 28 Apr P.M.
+
 ##########################################################
 
 | D e v e l o p e d by C a f t e l l e  
