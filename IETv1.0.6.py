@@ -110,9 +110,9 @@ def MailGonder():
 
             print(' | Gönderilecek Dosya Bulundu. Mail göndermeye hazırlanıyorum. ')
             mail_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-            mail_server.login("developed.by.caftelle@gmail.com", 'yzgchfnfzbivbhei')
+            mail_server.login("developed.caftelle@gmail.com", '**********')
             message = EmailMessage()
-            sender = "developed.by.caftelle@gmail.com"
+            sender = "developed.caftelle@gmail.com"
             recipient = mail
             message['From'] = 'Caftelle Software'
             message['To'] = recipient
