@@ -4,14 +4,16 @@
 ########################## DEVELOPED BY CAFTELLE ##########################
 ###########################################################################
 ################################# I E T ###################################
-######################## V E R S I O N  1 . 0 . 5 #########################
+######################## V E R S I O N  1 . 0 . 6 #########################
 ###########################################################################
+###########################################################################
+################## Caftelle Created by Furkan ARINCI ######################
 ###########################################################################
 
 
 # GEREKLİ KÜTÜPHANELER
-
-
+from pathlib import Path
+from playsound import playsound
 import cv2 as cv
 from pyzbar import pyzbar
 from pyzbar.pyzbar import decode
@@ -24,7 +26,7 @@ import os
 import mimetypes
 from email.message import EmailMessage
 import smtplib
-import beepy as beep
+
 
 
 print('')
@@ -49,7 +51,8 @@ def dosyasilme():
     else:
 
         print(' | Hatalı bir kod tuşladınız tekrar deneyiniz.')
-        beep.beep(3)
+        alarmsound = Path().cwd() / "alarm.mp3"
+        playsound(alarmsound)
         dosyasilme()
   except:
 
@@ -73,7 +76,8 @@ def MailGonder():
         else:
 
             print(' | Hatalı kod tuşladınız. Tekrar Deneyiniz.')
-            beep.beep(3)
+            alarmsound = Path().cwd() / "alarm.mp3"
+            playsound(alarmsound)
             MailGonder()
 
         recipient = mail
@@ -132,18 +136,21 @@ def MailGonder():
             mail_server.quit()
 
             print('\n | Gönderilen Mail Adresi: '+ recipient +'\n | M A I L  B A S A R I Y L A  G O N D E R I L D I . \n')
-            beep.beep(5)
+            mailsound = Path().cwd() / "mailgonder.mp3"
+            playsound(mailsound)
 
 
         else:
 
             print(' | Dosya bulunamadığı için mail gönderilemedi.')
-            beep.beep(3)
+            alarmsound = Path().cwd() / "alarm.mp3"
+            playsound(alarmsound)
 
     except:
 
         print(' | Mail Adresini veya Kullanıcı Adı yanlış olduğu için mail gönderilemedi.')
-        beep.beep(3)
+        alarmsound = Path().cwd() / "alarm.mp3"
+        playsound(alarmsound)
         MailGonder()
 
 def AllWithLove():
@@ -184,7 +191,8 @@ def AllWithLove():
                 output.write(resp.content)
 
                 print('| İndirme Tamamlandı. ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
 
             break
 
@@ -268,7 +276,8 @@ def AllWithLove():
                 qrtemiz2 = obj.data.decode('utf-8')
                 cv.putText(img, str(qrtemiz2), (200, 200), font, 1,
                            (0, 255, 160), 2)
-                beep.beep(1)
+                qrsound = Path().cwd() / "qr.mp3"
+                playsound(qrsound)
 
 
             print(
@@ -776,7 +785,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . M A N U E L  D U Z E L T M E  G E R E K I Y O R ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -809,7 +819,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -841,7 +852,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -873,7 +885,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -905,7 +918,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -937,7 +951,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -969,7 +984,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1001,7 +1017,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
 
                 break
@@ -1034,7 +1051,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
             if 'CİHAZ KİRALAMA İPTAL' in iptalturu:
@@ -1065,7 +1083,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1097,7 +1116,8 @@ def AllWithLove():
                 tesisline = tesisline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1129,7 +1149,8 @@ def AllWithLove():
                 iptalline = iptalline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1161,7 +1182,8 @@ def AllWithLove():
                 iptalline = iptalline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1193,7 +1215,8 @@ def AllWithLove():
                 iptalline = iptalline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1225,7 +1248,8 @@ def AllWithLove():
                 iptalline = iptalline + 1
                 savestart = False
                 print(' |  B A Ş A R I Y L A   A K T A R I L D I . ')
-                beep.beep(5)
+                textsound = Path().cwd() / "text.mp3"
+                playsound(textsound)
                 planWorkbook.save('Taranan_Is_Emirleri.xlsx')
                 break
 
@@ -1263,10 +1287,12 @@ try:
         dosyasilme()
     else:
         print(' | Hatalı kod tuşladınız. Tekrar Deneyiniz.')
-        beep.beep(3)
+        alarmsound = Path().cwd() / "alarm.mp3"
+        playsound(alarmsound)
 except:
     print(' | Bilinmeyen bir sorun oluştu. Uygulamayı yeniden başlatınız.')
-    beep.beep(3)
+    alarmsound = Path().cwd() / "alarm.mp3"
+    playsound(alarmsound)
 
 
 
@@ -1284,6 +1310,8 @@ print('')
 ########################## DEVELOPED BY CAFTELLE ##########################
 ###########################################################################
 ################################# I E T ###################################
-######################## V E R S I O N  1 . 0 . 5 #########################
+######################## V E R S I O N  1 . 0 . 6 #########################
 ###########################################################################
+###########################################################################
+################## Caftelle Created by Furkan ARINCI ######################
 ###########################################################################
